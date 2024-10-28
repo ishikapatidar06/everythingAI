@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
 import { IoMenu, IoClose } from "react-icons/io5";
 
-// Custom hook for dark mode
 const useDarkMode = () => {
   const [theme, setTheme] = useState("light");
 
@@ -96,7 +95,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-12 left-0 w-full bg-white dark:bg-gray-800 z-10 flex flex-col space-y-6 py-6 border-t">
+        <div className="md:hidden fixed top-12 left-0 w-full bg-white dark:bg-gray-900 z-10 flex flex-col space-y-4 p-4 border-t">
           {[
             "Home",
             "About",
@@ -108,7 +107,7 @@ const Navbar: React.FC = () => {
           ].map((item, index) => (
             <a
               key={index}
-              className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white cursor-pointer text-sm font-medium"
+              className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white cursor-pointer text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item}

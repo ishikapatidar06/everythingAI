@@ -18,8 +18,8 @@ export default function Values() {
     description,
   }) => {
     return (
-      <div className="p-4 mt-4 lg:mt-0 max-w-[460px] w-full">
-        <div className="text-center p-6">
+      <div className="p-2 md:p-4 mt-2 md:mt-4 lg:mt-0 max-w-[460px] w-full">
+        <div className="text-center p-3 md:p-6">
           <div className="w-16 h-16 rounded-xl text-2xl inline-flex items-center justify-center bg-blue-600 text-white mb-6">
             {icon}
           </div>
@@ -34,10 +34,10 @@ export default function Values() {
       <div className="container px-4 mx-auto">
         <div className="flex max-w-5xl justify-center text-center mx-auto md:mb-6">
           <div>
-            <h2 className="text-3xl font-bold leading-tight md:text-[45px] mb-4">
+            <h2 className="text-4xl font-bold leading-tight md:text-[45px] mb-4">
               Our Values
             </h2>
-            <h4 className="text-2xl font-medium mb-4 mt-2">
+            <h4 className="text-xl md:text-2xl font-medium mb-4 mt-2">
               At Everything Talent, our core values drive everything we do
             </h4>
           </div>

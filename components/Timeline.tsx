@@ -1,11 +1,9 @@
-// pages/journey.js
-
 import React from "react";
 
 const Journey = () => {
   return (
     <div>
-      <div className="w-full px-28 bg-white border-white dark:bg-neutral-950 pt-8 md:py-16">
+      <div className="w-full px-4 md:px-24 bg-white border-white dark:bg-neutral-950 pt-8 md:py-16">
         {/* <!-- Container for the journey section --> */}
         <div className="flex justify-center md:container px-4 sm:px-6 mb-6 md:mb-40">
           {/* <!-- Text container for heading and description --> */}

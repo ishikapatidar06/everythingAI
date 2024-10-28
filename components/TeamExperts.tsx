@@ -149,18 +149,16 @@ const TeamExperts: React.FC<TeamExpertsProps> = ({ id }) => {
   if (!member) return null;
 
   return (
-    <div
-      className="relative flex flex-col items-center cursor-pointer"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
+    <div className="relative flex flex-col items-center cursor-pointer">
       <img
         src={member.image}
         alt={member.name}
         className="rounded-full w-8 h-8 md:w-24 md:h-24  object-cover "
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
       />
       {hovered && (
-        <div className="absolute top-8 md:top-24 w-56 p-4 bg-blue-500 text-white rounded-lg shadow-lg text-center z-10">
+        <div className="absolute top-8 md:top-24 w-56 p-4 backdrop-blur-lg bg-opacity-60 bg-blue-500 text-white rounded-lg shadow-lg text-center z-10">
           <h3 className="font-semibold">{member.name}</h3>
           <p className="text-sm">{member.role}</p>
           <p className="text-xs mt-1">{member.description}</p>
@@ -172,15 +170,17 @@ const TeamExperts: React.FC<TeamExpertsProps> = ({ id }) => {
 const TeamGrid: React.FC = () => {
   return (
     <section className="text-center px-4 ">
-      <h2 className="text-5xl font-bold mb-4">Our Experts Team</h2>
-      <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto md:mb-14 md:text-lg">
+      <div className="text-3xl md:text-5xl font-bold mb-4">
+        Our Experts Team
+      </div>
+      <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 md:mb-14 md:text-lg">
         At Everything Talent, our innovative team develops AI-driven assessments
         and an advanced ATS to modernize hiring. We focus on reducing bias,
         making recruitment efficient, and providing accessible tools for
         companies of all sizes to attract top talent.
       </p>
 
-      <div className="grid grid-rows-7 grid-flow-col grid-cols-7 gap-4 mx-auto max-w-5xl">
+      <div className="grid grid-rows-7 grid-flow-col grid-cols-7 gap-4 mx-auto max-w-5xl ">
         <div className="col-start-4 row-start-1 flex justify-center">
           <TeamExperts id={1} />
         </div>
