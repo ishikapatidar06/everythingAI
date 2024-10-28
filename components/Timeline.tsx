@@ -21,7 +21,7 @@ const Journey = () => {
         </div>
 
         {/* <!-- Timeline container --> */}
-        <div className="w-full pr-20 border-2 bg-white dark:bg-neutral-950 md:container px-4 sm:px-6">
+        <div className="w-full bg-white dark:bg-neutral-950 md:container px-4 sm:px-6">
           <div className="relative mx-auto flex">
             <div className="flex flex-col w-full gap-0">
               {/* <!-- Timeline event (repeated block) --> */}

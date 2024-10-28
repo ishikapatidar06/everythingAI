@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import TeamExperts from "./TeamExperts";
+
 import Journey from "./Timeline";
 import Footer from "./Footer";
 import Story from "./Story";
